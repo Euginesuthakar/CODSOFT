@@ -1,0 +1,151 @@
+/* RESET - NO TRANSITIONS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: none !important;  /* Removes ALL transitions */
+}
+
+html {
+    scroll-behavior: auto !important;  /* Instant scroll */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVBAR - NO HOVER EFFECTS */
+.custom-navbar {
+    background: rgba(0,0,0,0.9);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    color: #fff !important;
+}
+
+/* HERO SECTION - NO EFFECTS */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/pinkshirt.jpg');
+    background-size: cover;
+    background-position: top left center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 100px 0 60px;
+}
+
+/* TEXT CONTENT */
+.text-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* BUTTONS - NO HOVER */
+.btn-primary {
+    background: #007bff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+/* HERO IMAGE - NO EFFECTS */
+.hero-img {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border: 5px solid rgba(255,255,255,0.2);
+}
+
+/* ABOUT SECTION */
+.about-section {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border: none;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 80px 0 40px;
+    }
+    
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-img {
+        width: 280px;
+        margin-top: 30px;
+    }
+    
+    .about-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .row.align-items-center {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-img {
+        width: 250px;
+    }
+}
